@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Navbar</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    /* Hover and active effects */
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+    .category-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1)
+    };
+  </style>
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="bg-gray-100 border-b border-gray-300 text-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
+      <div class="flex items-center space-x-2 text-gray-600">
+        <span class="material-icons text-lg">location_on</span>
+        <span>Store Location: Lincoln - 344, Illinois, Chicago, USA</span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span>Eng</span>
+        <span>USD</span>
+        <a href="#" class="hover:underline">Sign In / Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navbar -->
+  <div class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-4">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="logo.jpeg" alt="Logo">
+      </div>
+
+      <!-- Search Bar -->
+      <div class="flex items-center w-full max-w-md mx-4">
+        <input type="text" placeholder="Search" class="w-full border border-gray-300 rounded-l-md p-2 focus:ring-green-500 focus:border-green-500">
+        <button class="bg-green-500 text-white px-4 py-2 rounded-r-md ">
+          Search
+        </button>
+      </div>
+
+      <!-- Icons and Cart -->
+      <div class="flex items-center space-x-6">
+        <span class="material-icons text-gray-600 text-2xl cursor-pointer">favorite_border</span>
+        <div class="flex items-center space-x-2">
+          <span class="material-icons text-gray-600 text-2xl cursor-pointer">shopping_cart</span>
+          <span class="text-gray-600">$57.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="bg-gray-800 text-white">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
+      <!-- Navigation Links -->
+      <div class="flex items-center space-x-6">
+        <a href="#" class="hover:text-green-500">Home</a>
+        <a href="#" class="hover:text-green-500">Shop</a>
+        <a href="#" class="hover:text-green-500">Pages</a>
+        <a href="#" class="hover:text-green-500">Blog</a>
+        <a href="#" class="hover:text-green-500">About Us</a>
+        <a href="#" class="hover:text-green-500">Contact Us</a>
+      </div>
+      <!-- Contact Info -->
+      <div class="flex items-center space-x-2">
+        <span class="material-icons text-lg text-green-500">phone</span>
+        <span> <a href="#">(218) 555-0114</a></span>
+      </div>
+    </div>
+  </div>
+                    <!-- hero section  -->
+  <main>
+    <div class="max-w-7xl mx-auto px-4 py-8">
+        <!-- Main Grid Container -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- Large Card -->
+          <div class="bg-green-800 rounded-xl relative overflow-hidden lg:col-span-2 flex items-center p-8">
+            <!-- Text Content -->
+            <div class="text-white z-10">
+              <h1 class="text-4xl font-bold mb-4">Fresh & Healthy Organic Food</h1>
+              <p class="text-lg mb-6">Sale up to <span class="bg-orange-500 px-2 py-1 rounded-md text-white">30% OFF</span></p>
+              <p class="mb-6">Free shipping on all your orders.</p>
+              <a href="#" class="bg-white text-green-500 px-6 py-3 rounded-full font-semibold shadow-md hover:bg-green-100 transition">
+                Shop now →
+              </a>
+            </div>
+            <!-- Image -->
+            <img src="Organic.jpeg" alt="Organic Food" class="absolute right-0 bottom-0 w-2/3 lg:w-auto lg:h-full object-cover z-0">
+          </div>
+    
+          <!-- Small Cards -->
+          <div class="grid grid-cols-1 gap-6">
+            <!-- Summer Sale Card -->
+            <div class="bg-white rounded-xl p-6 shadow-md flex flex-col items-start">
+              <h2 class="text-gray-800 text-xl font-bold mb-2">SUMMER SALE</h2>
+              <p class="text-4xl font-bold text-green-500 mb-4">75% OFF</p>
+              <p class="text-gray-500 mb-6">Only Fruits & Vegetables</p>
+              <a href="#" class="text-green-500 font-semibold hover:underline">
+                Shop Now →
+              </a>
+            </div>
+    
+            <!-- Best Deal Card -->
+            <div class="bg-green-700 rounded-xl p-6 shadow-md flex flex-col items-start text-white">
+              <h2 class="text-lg font-bold mb-2">BEST DEAL</h2>
+              <p class="text-xl font-bold mb-4">Special Products Deal of the Month</p>
+              <a href="#" class="bg-white text-green-700 px-4 py-2 rounded-full font-semibold shadow-md hover:bg-green-100 transition">
+                Shop Now →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+                <!-- an other section  -->
+
+    <div class="bg-white shadow-md rounded-lg p-6 max-w-6xl mx-auto mt-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <!-- Free Shipping -->
+      <div class="flex flex-col items-center">
+        <div class="text-green-500 text-4xl">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-4H5l3-7h9l3 7h-4v4m-6 0h6m-6 0v-4m6 4v-4" />
+          </svg>
+        </div>
+        <h3 class="font-semibold text-lg mt-2">Free Shipping</h3>
+        <p class="text-gray-500 text-sm">Free shipping on all your orders</p>
+      </div>
+
+      <!-- Customer Support -->
+      <div class="flex flex-col items-center">
+        <div class="text-green-500 text-4xl">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01m8-.01h.01M15 8a6 6 0 00-3-5.197 6 6 0 00-6 10.394A5 5 0 0010 16l.013.001c.605 0 1.19.185 1.666.5H21l-2-4h-4l2-4H9.5M5 19l-2 3m16-3l2 3" />
+          </svg>
+        </div>
+        <h3 class="font-semibold text-lg mt-2">Customer Support 24/7</h3>
+        <p class="text-gray-500 text-sm">Instant access to support</p>
+      </div>
+
+      <!-- Secure Payment -->
+      <div class="flex flex-col items-center">
+        <div class="text-green-500 text-4xl">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 11c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-3.315 0-6 2.685-6 6h12c0-3.315-2.685-6-6-6z" />
+          </svg>
+        </div>
+        <h3 class="font-semibold text-lg mt-2">100% Secure Payment</h3>
+        <p class="text-gray-500 text-sm">We ensure your money is safe</p>
+      </div>
+
+      <!-- Money-Back Guarantee -->
+      <div class="flex flex-col items-center">
+        <div class="text-green-500 text-4xl">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 11h16M4 15h16M4 19h16M4 9h16m-8 8h.01M8 17h.01M16 17h.01" />
+          </svg>
+        </div>
+        <h3 class="font-semibold text-lg mt-2">Money-Back Guarantee</h3>
+        <p class="text-gray-500 text-sm">30 Days Money-Back Guarantee</p>
+      </div>
+    </div>
+  </div>
+ 
+                <!-- next section  -->
+
+<div class="max-w-7xl mx-auto p-6">
+    <!-- Heading -->
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-2xl font-bold text-gray-800">Popular Categories</h2>
+      <a href="#" class="text-green-500 font-medium flex items-center hover:underline">
+        View All
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M12.293 4.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 10H4a1 1 0 110-2h10.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Categories Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <!-- Category Card Template -->
+      <div 
+        class="category-card border p-4 rounded-lg text-center transition hover:shadow-md cursor-pointer"
+        data-category="Fresh Fruit" 
+        onclick="setActiveCategory(event)"
+      >
+        <img src="fresh.jpeg" alt="Fresh Fruit" class="mx-auto mb-3">
+        <p class="font-medium text-gray-800">Fresh Fruit</p>
+      </div>
+
+      <div 
+        class="category-card border p-4 rounded-lg text-center transition hover:shadow-md cursor-pointer"
+        data-category="Fresh Vegetables" 
+        onclick="setActiveCategory(event)"
+      >
+        <img src="Vege.jpeg" alt="Fresh Vegetables" class="mx-auto mb-3">
+        <p class="font-medium text-gray-800">Fresh Vegetables</p>
+      </div>
+
+      <div 
+        class="category-card border p-4 rounded-lg text-center transition hover:shadow-md cursor-pointer"
+        data-category="Meat & Fish" 
+        onclick="setActiveCategory(event)"
+      >
+        <img src="Fish.jpeg" alt="Meat & Fish" class="mx-auto mb-3">
+        <p class="font-medium text-gray-800">Meat & Fish</p>
+      </div>
+
+      <div 
+        class="category-card border p-4 rounded-lg text-center transition hover:shadow-md cursor-pointer"
+        data-category="Snacks" 
+        onclick="setActiveCategory(event)"
+      >
+        <img src="snack.jpeg" alt="Snacks" class="mx-auto mb-3">
+        <p class="font-medium text-gray-800">Snacks</p>
+      </div>
+
+      <div 
+        class="category-card border p-4 rounded-lg text-center transition hover:shadow-md cursor-pointer"
+        data-category="Beverages" 
+        onclick="setActiveCategory(event)"
+      >
+        <img src="Bave.jpeg" alt="Beverages" class="mx-auto mb-3">
+        <p class="font-medium text-gray-800">Beverages</p>
+      </div>
+
+      <!-- <div 
+        class="category-card border p-4 rounded-lg text-center transition hover:shadow-md cursor-pointer"
+        data-category="Beverages" 
+        onclick="setActiveCategory(event)"
+      >
+        <img src="image 6.png" alt="Beverages" class="mx-auto mb-3">
+        <p class="font-medium text-gray-800">Beauty & Health</p>
+      </div> -->
+
+      <!-- <div 
+        class="category-card border p-4 rounded-lg text-center transition hover:shadow-md cursor-pointer"
+        data-category="Beverages" 
+        onclick="setActiveCategory(event)"
+      >
+        <img src="image 7.png" alt="Beverages" class="mx-auto mb-3">
+        <p class="font-medium text-gray-800">Bread & Bakery</p>
+      </div> -->
+
+      <!-- <div 
+        class="category-card border p-4 rounded-lg text-center transition hover:shadow-md cursor-pointer"
+        data-category="Beverages" 
+        onclick="setActiveCategory(event)"
+      >
+        <img src="image 8.png" alt="Beverages" class="mx-auto mb-3">
+        <p class="font-medium text-gray-800">Baking Needs</p>
+      </div> -->
+      <!-- <div 
+        class="category-card border p-4 rounded-lg text-center transition hover:shadow-md cursor-pointer"
+        data-category="Beverages" 
+        onclick="setActiveCategory(event)"
+      >
+        <img src="image 9.png" alt="Beverages" class="mx-auto mb-3">
+        <p class="font-medium text-gray-800">Cooking</p>
+      </div> -->
+      <!-- <div 
+        class="category-card border p-4 rounded-lg text-center transition hover:shadow-md cursor-pointer"
+        data-category="Beverages" 
+        onclick="setActiveCategory(event)"
+      >
+        <img src="image 10.png" alt="Beverages" class="mx-auto mb-3">
+        <p class="font-medium text-gray-800">Diabetic Food</p>
+      </div>
+      <div 
+        class="category-card border p-4 rounded-lg text-center transition hover:shadow-md cursor-pointer"
+        data-category="Beverages" 
+        onclick="setActiveCategory(event)"
+      >
+        <img src="image 11.png" alt="Beverages" class="mx-auto mb-3">
+        <p class="font-medium text-gray-800">Dish Detergents</p>
+      </div>
+      <div 
+        class="category-card border p-4 rounded-lg text-center transition hover:shadow-md cursor-pointer"
+        data-category="Beverages" 
+        onclick="setActiveCategory(event)"
+      >
+        <img src="image 12.png" alt="Beverages" class="mx-auto mb-3">
+        <p class="font-medium text-gray-800">Oil</p>
+      </div> -->
+    </div>
+  </div>
+
+
+  <!-- next section  -->
+
+
+  <div class="max-w-7xl mx-auto p-6">
+    <!-- Heading -->
+    <div class="flex justify-between items-center mb-6">
+      <h2 class="text-2xl font-bold text-gray-800">Popular Products</h2>
+      <a href="#" class="text-green-500 font-medium flex items-center hover:underline">
+        View All
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M12.293 4.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 10H4a1 1 0 110-2h10.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Product Card -->
+      <div 
+        class="product-card border p-4 rounded-lg transition hover:shadow-md cursor-pointer relative"
+        onclick="setActiveProduct(event)"
+      >
+        <!-- Discount Badge -->
+        <div class="absolute top-2 left-2 bg-red-500 text-white text-xs font-medium rounded px-2 py-1">Sale 50%</div>
+        <!-- Favourite Button -->
+        <button 
+          class="absolute top-2 right-2 p-2 bg-white rounded-full hover:bg-gray-100"
+          onclick="toggleFavourite(event)"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09A6.49 6.49 0 0119.5 3C22.58 3 25 5.42 25 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+          </svg>
+        </button>
+        <!-- Product Image -->
+        <img src="GreA.jpeg" alt="Green Apple" class="mx-auto mb-3">
+        <!-- Product Info -->
+        <h3 class="font-medium text-gray-800">Green Apple</h3>
+        <div class="flex items-center justify-between mt-2">
+          <p class="text-sm text-gray-500 line-through">$14.99</p>
+          <p class="text-sm font-semibold text-gray-800">$9.99</p>
+        </div>
+        <!-- Rating -->
+        <div class="flex items-center mt-2">
+          <span class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="text-gray-500 text-xs ml-1">(120)</span>
+        </div>
+        <!-- Cart Icon -->
+        <button class="absolute bottom-3 right-3 p-2 bg-gray-100 rounded-full hover:bg-green-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600 hover:text-green-500" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M16 11V7a4 4 0 10-8 0v4H5a2 2 0 00-2 2v4a2 2 0 002 2h10a2 2 0 002-2v-4a2 2 0 00-2-2h-1zM8 7a2 2 0 114 0v4H8V7z" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Additional Product Cards (Repeat as needed) -->
+      <div 
+        class="product-card border p-4 rounded-lg transition hover:shadow-md cursor-pointer relative"
+        onclick="setActiveProduct(event)"
+      >
+        <button 
+          class="absolute top-2 right-2 p-2 bg-white rounded-full hover:bg-gray-100"
+          onclick="toggleFavourite(event)"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09A6.49 6.49 0 0119.5 3C22.58 3 25 5.42 25 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+          </svg>
+        </button>
+        <img src="fr.jpeg" alt="Fresh Indian Malta" class="mx-auto mb-3">
+        <h3 class="font-medium text-gray-800">Fresh Indian Malta</h3>
+        <p class="text-sm font-semibold text-gray-800 mt-2">$20.00</p>
+        <div class="flex items-center mt-2">
+          <span class="text-yellow-400">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="text-gray-500 text-xs ml-1">(80)</span>
+        </div>
+        <button class="absolute bottom-3 right-3 p-2 bg-gray-100 rounded-full hover:bg-green-100">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600 hover:text-green-500" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M16 11V7a4 4 0 10-8 0v4H5a2 2 0 00-2 2v4a2 2 0 002 2h10a2 2 0 002-2v-4a2 2-20" />
+          </svg>
+        </button>
+      </div>
+      <!-- Product Card -->
+
+    </div>
+  </div>
+   
+  <!--  -->
+  <div class="flex flex-wrap justify-center gap-6 p-6">
+    <!-- Sale of the Month -->
+    <div class="w-72 p-6 bg-blue-500 rounded-xl text-white text-center relative">
+      <p class="text-sm uppercase">Best Deals</p>
+      <h2 class="text-xl font-bold">Sale of the Month</h2>
+      <p class="text-lg mt-2">00 : 02 : 18 : 46</p>
+      <button class="mt-4 px-4 py-2 bg-white text-green-600 rounded-lg font-semibold">Shop Now →</button>
+      <img src="vegetable.jpg" alt="Vegetables" class="w-full h-40 mt-4 rounded-xl object-cover">
+    </div>
+    
+    <!-- Low-Fat Meat -->
+    <div class="w-72 p-6 bg-black rounded-xl text-white text-center relative">
+      <p class="text-sm uppercase">85% Fat Free</p>
+      <h2 class="text-xl font-bold">Low-Fat Meat</h2>
+      <p class="text-lg mt-2">Started at <span class="text-yellow-400 font-bold">$79.99</span></p>
+      <button class="mt-4 px-4 py-2 bg-white text-green-600 rounded-lg font-semibold">Shop Now →</button>
+      <img src="meatLo.jpg" alt="Meat" class="w-full h-40 mt-4 rounded-xl object-cover">
+    </div>
+    
+    <!-- 100% Fresh Fruit -->
+    <div class="w-72 p-6 bg-yellow-400 rounded-xl text-black text-center relative">
+      <p class="text-sm uppercase">Summer Sale</p>
+      <h2 class="text-xl font-bold">100% Fresh Fruit</h2>
+      <p class="text-lg mt-2">Up to <span class="text-black font-bold">64% OFF</span></p>
+      <button class="mt-4 px-4 py-2 bg-white text-green-600 rounded-lg font-semibold">Shop Now →</button>
+      <img src="freshfruit.jpg" alt="Fruits" class="w-full h-40 mt-4 rounded-xl object-cover">
+    </div>
+  </div>
+
+  <!--  -->
+  <div class="max-w-6xl mx-auto">
+    <h1 class="text-2xl font-bold mb-4">Hot Deals</h1>
+    <div class="grid grid-cols-4 gap-4">
+        <!-- Featured Product -->
+        <div class="col-span-2 bg-white p-4 rounded-lg shadow-lg">
+            <div class="relative">
+                <img src="Chinese Cabbage.jpg" alt="Chinese Cabbage" class="w-full h-48 object-cover rounded-lg">
+                <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">Sale 50%</span>
+                <span class="absolute top-2 right-2 bg-blue-500 text-white text-xs px-2 py-1 rounded">Best Sale</span>
+            </div>
+            <h2 class="text-lg font-semibold mt-3">Chinese Cabbage</h2>
+            <p class="text-green-600 text-xl font-bold">$12.00 <span class="text-gray-400 line-through">$24.00</span></p>
+            <p class="text-sm text-gray-500">(524 Feedback)</p>
+            <button class="w-full bg-green-500 text-white py-2 rounded-lg mt-3">Add to Cart</button>
+            <p class="text-xs text-gray-500 mt-2">Hurry up! Offer ends in: <span class="text-red-500 font-bold">01 Days 23 Hours 57 Secs</span></p>
+        </div>
+
+        <!-- Other Products -->
+        <div class="bg-white p-4 rounded-lg shadow">
+            <img src="Chinese Cabbage.jpg" alt="Chinese Cabbage" class="w-full h-32 object-cover rounded">
+            <h2 class="text-sm font-semibold mt-2">Chinese Cabbage</h2>
+            <p class="text-green-600 text-sm font-bold">$12.00</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow">
+            <img src="Green Lettuce.jpg" alt="Green Lettuce" class="w-full h-32 object-cover rounded">
+            <h2 class="text-sm font-semibold mt-2">Green Lettuce</h2>
+            <p class="text-green-600 text-sm font-bold">$9.00</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow">
+            <img src="Eggplant.jpg" alt="Eggplant" class="w-full h-32 object-cover rounded">
+            <h2 class="text-sm font-semibold mt-2">Eggplant</h2>
+            <p class="text-green-600 text-sm font-bold">$34.00</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow">
+            <span class="bg-red-500 text-white text-xs px-2 py-1 rounded">Sale 50%</span>
+            <img src="Green Capsicum.jpg" alt="Green Capsicum" class="w-full h-32 object-cover rounded">
+            <h2 class="text-sm font-semibold mt-2">Green Capsicum</h2>
+            <p class="text-green-600 text-sm font-bold">$9.00 <span class="text-gray-400 line-through">$20.99</span></p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow">
+            <img src="Green Chili.jpg" alt="Green Chili" class="w-full h-32 object-cover rounded">
+            <h2 class="text-sm font-semibold mt-2">Green Chili</h2>
+            <p class="text-green-600 text-sm font-bold">$34.00</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow">
+            <img src="Big Potatoes.jpg" alt="Big Potatoes" class="w-full h-32 object-cover rounded">
+            <h2 class="text-sm font-semibold mt-2">Big Potatoes</h2>
+            <p class="text-green-600 text-sm font-bold">$12.00</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow">
+            <span class="bg-red-500 text-white text-xs px-2 py-1 rounded">Sale 50%</span>
+            <img src="Tomatoes.jpg" alt="Tomatoes" class="w-full h-32 object-cover rounded">
+            <h2 class="text-sm font-semibold mt-2">Tomatoes</h2>
+            <p class="text-green-600 text-sm font-bold">$10.00</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow">
+            <img src="Surjipur Mango.jpg" alt="Surjipur Mango" class="w-full h-32 object-cover rounded">
+            <h2 class="text-sm font-semibold mt-2">Surjipur Mango</h2>
+            <p class="text-green-600 text-sm font-bold">$34.00</p>
+        </div>
+    </div>
+</div>
+  <!--  -->
+
+  <div class="max-w-6xl mx-auto">
+    <div class="relative bg-black text-white rounded-lg overflow-hidden">
+        <img src="Bg-vege.webp" alt="Green Vegetables" class="w-full h-52 object-cover">
+        <div class="absolute inset-0 flex items-center px-10">
+            <div class="max-w-md">
+                <p class="text-sm uppercase tracking-wide">Summer Sale</p>
+                <h2 class="text-3xl font-bold"><span class="text-orange-500">37%</span> OFF</h2>
+                <p class="text-sm text-white">Free on all your order, Free Shipping and 30 days money-back guarantee</p>
+                <button class="mt-4 bg-green-500 text-white px-6 py-2 rounded-lg flex items-center">
+                    Shop Now <span class="ml-2">→</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  -->
+<div class="max-w-6xl mx-auto">
+  <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-bold">Featured Products</h2>
+      <a href="#" class="text-green-500 flex items-center">View All →</a>
+  </div>
+  <div class="grid grid-cols-5 gap-4">
+      <!-- Product 1 -->
+      <div class="bg-white p-4 rounded-lg shadow relative">
+          <span class="absolute top-2 left-2 bg-red-500 text-white text-xs px-2 py-1 rounded">Sale 50%</span>
+          <img src="GreA.jpeg" alt="Green Apple" class="w-full h-32 object-cover rounded">
+          <h2 class="text-sm font-semibold mt-2">Green Apple</h2>
+          <p class="text-green-600 text-sm font-bold">$14.99 <span class="text-gray-400 line-through">$20.99</span></p>
+          <button class="mt-2 w-full bg-green-500 text-white py-1 rounded-lg">🛒</button>
+
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-white p-4 rounded-lg shadow relative">
+          <img src="orange.jpg" alt="Fresh Indian Malta" class="w-full h-32 object-cover rounded">
+          <h2 class="text-sm font-semibold mt-2">Fresh Indian Malta</h2>
+          <p class="text-green-600 text-sm font-bold">$20.00</p>
+          <button class="mt-2 w-full bg-green-500 text-white py-1 rounded-lg">🛒</button>
+
+      </div>
+
+      <!-- Product 3 (Highlighted) -->
+      <div class="bg-white p-4 rounded-lg shadow border-2 border-green-500 relative">
+          <img src="Chinese Cabbage.jpg" alt="Chinese Cabbage" class="w-full h-32 object-cover rounded">
+          <h2 class="text-sm font-semibold mt-2">Chinese Cabbage</h2>
+          <p class="text-green-600 text-sm font-bold">$12.00</p>
+          <div class="absolute top-2 right-2 flex gap-2">
+          </div>
+          <button class="mt-2 w-full bg-green-500 text-white py-1 rounded-lg">🛒</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="bg-white p-4 rounded-lg shadow relative">
+          <img src="Green Lettuce.jpg" alt="Green Lettuce" class="w-full h-32 object-cover rounded">
+          <h2 class="text-sm font-semibold mt-2">Green Lettuce</h2>
+          <p class="text-green-600 text-sm font-bold">$9.00</p>
+          <button class="mt-2 w-full bg-green-500 text-white py-1 rounded-lg">🛒</button>
+
+      </div>
+
+      <!-- Product 5 -->
+      <div class="bg-white p-4 rounded-lg shadow relative">
+          <img src="Eggplant.jpg" alt="Eggplant" class="w-full h-32 object-cover rounded">
+          <h2 class="text-sm font-semibold mt-2">Eggplant</h2>
+          <p class="text-green-600 text-sm font-bold">$34.00</p>
+          <button class="mt-2 w-full bg-green-500 text-white py-1 rounded-lg">🛒</button>
+
+      </div>
+  </div>
+</div>
+<!--  -->
+<div class="max-w-6xl mx-auto">
+  <h2 class="text-3xl font-bold text-center mb-6">Latest News</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="orange.jpg" alt="Oranges" class="w-full h-56 object-cover">
+          <div class="p-4">
+              <span class="block bg-gray-900 text-white text-sm font-semibold px-3 py-1 w-max rounded-md">18 NOV</span>
+              <p class="mt-4 text-gray-700">Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.</p>
+              <a href="#" class="text-green-500 font-semibold mt-2 block">Read More →</a>
+          </div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="fod.jpg" alt="Food" class="w-full h-56 object-cover">
+          <div class="p-4">
+              <span class="block bg-gray-900 text-white text-sm font-semibold px-3 py-1 w-max rounded-md">29 JAN</span>
+              <p class="mt-4 text-gray-700">Eget lobortis lorem lacinia. Vivamus pharetra semper.</p>
+              <a href="#" class="text-green-500 font-semibold mt-2 block">Read More →</a>
+          </div>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img src="salad.jpg" alt="Salad" class="w-full h-56 object-cover">
+          <div class="p-4">
+              <span class="block bg-gray-900 text-white text-sm font-semibold px-3 py-1 w-max rounded-md">21 FEB</span>
+              <p class="mt-4 text-gray-700">Maecenas blandit risus elementum mauris malesuada.</p>
+              <a href="#" class="text-green-500 font-semibold mt-2 block">Read More →</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!--  -->
+    <!-- Client Testimonials Section -->
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Client Testimonials</h2>
+      <div class="flex space-x-6 overflow-hidden">
+          <!-- Testimonial Card 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-md w-1/3">
+              <p class="text-green-500 text-3xl">&ldquo;</p>
+              <p class="text-gray-700">Pellentesque eu nibh eget mauris congue mattis nec tellus...</p>
+              <div class="flex items-center mt-4">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="w-10 h-10 rounded-full">
+                  <div class="ml-3">
+                      <p class="font-bold">Robert Fox</p>
+                      <p class="text-gray-500 text-sm">Customer</p>
+                  </div>
+                  <div class="ml-auto text-orange-400">★★★★★</div>
+              </div>
+          </div>
+          <!-- Testimonial Card 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-md w-1/3">
+              <p class="text-green-500 text-3xl">&ldquo;</p>
+              <p class="text-gray-700">Pellentesque eu nibh eget mauris congue mattis nec tellus...</p>
+              <div class="flex items-center mt-4">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client" class="w-10 h-10 rounded-full">
+                  <div class="ml-3">
+                      <p class="font-bold">Dianne Russell</p>
+                      <p class="text-gray-500 text-sm">Customer</p>
+                  </div>
+                  <div class="ml-auto text-orange-400">★★★★★</div>
+              </div>
+          </div>
+          <!-- Testimonial Card 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-md w-1/3">
+              <p class="text-green-500 text-3xl">&ldquo;</p>
+              <p class="text-gray-700">Pellentesque eu nibh eget mauris congue mattis nec tellus...</p>
+              <div class="flex items-center mt-4">
+                  <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Client" class="w-10 h-10 rounded-full">
+                  <div class="ml-3">
+                      <p class="font-bold">Eleanor Pena</p>
+                      <p class="text-gray-500 text-sm">Customer</p>
+                  </div>
+                  <div class="ml-auto text-orange-400">★★★★★</div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <!-- Brand Logos -->
+  <div class="flex justify-center space-x-10 my-10 text-gray-400 text-lg font-semibold">
+      <span class="italic text-green-500">steps</span>
+      <span>MANGO</span>
+      <span class="text-gray-300">Food</span>
+      <span class="font-bold">-FOOD-</span>
+      <span class="text-gray-500">BOOK-OFF</span>
+      <span class="text-gray-400">G Series</span>
+  </div>
+  
+  <!-- Instagram Section -->
+  <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center">Follow us on Instagram</h2>
+      <div class="grid grid-cols-5 gap-4">
+          <img src="tomato.jpg" class="rounded-lg shadow-md" alt="Instagram image">
+          <img src="leaf.jpg" class="rounded-lg shadow-md" alt="Instagram image">
+          <img src="vegetables.jpg" class="rounded-lg shadow-md" alt="Instagram image">
+          <img src="peppers.jpg" class="rounded-lg shadow-md" alt="Instagram image">
+          <img src="green.jpg" class="rounded-lg shadow-md" alt="Instagram image">
+      </div>
+  </div>
+  <!--  -->
+      <!-- Newsletter Section -->
+      <div class="bg-gray-50 py-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-xl font-bold">Subscribe our Newsletter</h2>
+            <p class="text-gray-600">Pellentesque eu nibh eget mauris congue mattis nec tellus. Phasellus imperdiet elit eu magna.</p>
+            <div class="mt-4 flex justify-center items-center space-x-2">
+                <input type="email" placeholder="Your email address" class="px-4 py-2 w-96 border rounded-md">
+                <button class="bg-green-500 text-white px-6 py-2 rounded-md">Subscribe</button>
+            </div>
+            <div class="flex justify-center space-x-4 mt-4 text-green-500 text-lg">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="max-w-6xl mx-auto grid grid-cols-5 gap-6">
+            <!-- Brand Info -->
+            <div class="col-span-2">
+                <h3 class="text-xl font-bold flex items-center">
+                    <span class="text-green-500 text-3xl">🌱</span> Ecobazar
+                </h3>
+                <p class="text-gray-400 mt-2">Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
+                <div class="mt-4">
+                    <p class="font-semibold">(219) 555-0114</p>
+                    <p class="underline">Proxy@gmail.com</p>
+                </div>
+            </div>
+            
+            <!-- Footer Links -->
+            <div>
+                <h4 class="font-bold mb-2">My Account</h4>
+                <ul class="text-gray-400 space-y-1">
+                    <li>My Account</li>
+                    <li>Order History</li>
+                    <li class="font-semibold">Shopping Cart</li>
+                    <li>Wishlist</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-2">Helps</h4>
+                <ul class="text-gray-400 space-y-1">
+                    <li>Contact</li>
+                    <li>FAQs</li>
+                    <li>Terms & Condition</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-2">Proxy</h4>
+                <ul class="text-gray-400 space-y-1">
+                    <li>About</li>
+                    <li>Shop</li>
+                    <li>Product</li>
+                    <li>Track Order</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-2">Categories</h4>
+                <ul class="text-gray-400 space-y-1">
+                    <li>Fruit & Vegetables</li>
+                    <li>Meat & Fish</li>
+                    <li>Bread & Bakery</li>
+                    <li>Beauty & Health</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="max-w-6xl mx-auto mt-6 flex justify-between text-gray-500 text-sm border-t border-gray-700 pt-4">
+            <p>Ecobazar eCommerce © 2021. All Rights Reserved</p>
+            <div class="flex space-x-2">
+              <img  src="Apple Pay.jpg" class="w-40 h-20" alt="Apple Pay">
+              <img src="VISA.jpg" class="w-40 h-20" alt="VISA">
+              <img src="Discover.jpg" class="w-20 h-20" class="w-40 h-20" alt="Discover">
+              <img src="Mastercard.jpg" class="w-40 h-20" alt="Mastercard">
+              <img src="Secure Payment.jpg" class="w-40 h-20" alt="Secure Payment">
+            </div>
+        </div>
+    </footer>
+  <script src="script.js"></script>
+</body>
+</html>
